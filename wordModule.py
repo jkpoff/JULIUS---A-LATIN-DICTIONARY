@@ -22,6 +22,7 @@ class Word:
         return self.etymology
 
     def getSynonyms(self):
+            try:
             self.examples = (self.latinWord[0]['definitions'][0]['examples'])
             synonyms = []
             for example in self.examples:
@@ -30,3 +31,5 @@ class Word:
                 if "Synonyms:" in example:
                     synonyms.append(example) 
             return synonyms
+        except IndexError as e:
+            return e
