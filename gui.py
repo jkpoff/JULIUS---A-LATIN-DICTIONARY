@@ -43,6 +43,7 @@ def dictionary_window():
             # ETYMOLOGY
             #lb2.insert(END, "\nEtymology:\n")
             lb2.insert(END, "\n\n" + etymology + "\n")
+        lb2.config(state=DISABLED)
     except TypeError:
         # 404 IMAGE 
         image404 = Image.open("images/dead_caesar.png")
@@ -56,8 +57,7 @@ def dictionary_window():
         error_main.place(relx=0.5, rely=0.6, anchor=CENTER)
         error_sub = Label(window2, text="TRY SEARCHING AGAIN...", font=("arial italic", 15))
         error_sub.place(relx=0.5, rely=0.725, anchor=CENTER)
-
-    lb2.config(state=DISABLED)
+        
     window2.mainloop()
 
 def word_definition():
