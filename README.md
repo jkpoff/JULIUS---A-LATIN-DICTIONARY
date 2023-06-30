@@ -3,4 +3,4 @@ A basic Latin dictionary built with Tkinter based off of the Wiktionary entries 
 
 The WiktionaryParser library is required to run this program.
 
-![Alt text](relative%20exampleimgsimg.jpg?raw=true "julius_main.png")
+![Alt text](relative%20exampleimgs/img.jpg?raw=true "julius_main.png")
